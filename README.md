@@ -18,3 +18,5 @@ More information about compiler in Windows please see here: http://www.esp8266.c
 Under development. DO NOT USE in a serious development. 
 
 MQTT Broker for test: https://github.com/mcollina/mosca
+
+**Author:** Tuan PM
