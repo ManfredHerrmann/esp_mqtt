@@ -554,7 +554,7 @@ void MQTT_Start()
 	connState = WIFI_INIT;
 	os_sprintf(client_id, MQTT_CLIENT_ID, sysCfg.device_id);	//MQTT client id: DVES_A01234567
 	os_sprintf(mqtt_topic[0], "/%08X/data", sysCfg.device_id); 	// subscribe topic /chipid/data, example: /A01234567/data
-	os_sprintf(mqtt_topic[1], "/%08X/ota");						// subscribe topic /chipid/ota, example: /A01234567/ota
+	os_sprintf(mqtt_topic[1], "/%08X/ota",sysCfg.device_id);						// subscribe topic /chipid/ota, example: /A01234567/ota
 	os_sprintf(pub_topic, "/%08X/send", sysCfg.device_id);		// send data to topic: /chipid/send
 
     mqtt_state.in_buffer = mqttRxBuf;
